@@ -65,3 +65,22 @@ button:active {
   color: #9ca3af;
   font-size: 13px;
 }
+
+#connection-status {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0 25px;
+}
+
+.connected {
+  color: #22c55e;
+}
+
+.disconnected {
+  color: #ef4444;
+}
+
+.connecting {
+  color: #f59e0b;
+}
