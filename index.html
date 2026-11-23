@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control remoto</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="api_service.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="remote">
+    <h2>Control remoto</h2>
+
+    <div class="row three">
+      <button class="power" onclick="send('tv/pwr')">TV ON/OFF</button>
+
+      <button class="power" onclick="send('sound/pwr')">SOUND ON/OFF</button>
+
+      <button class="all" onclick="allPower()">ALL ON/OFF</button>
+    </div>
+
+    <div class="row three">
+      <button onclick="send('sound/mute')">SOUND MUTE</button>
+
+      <button onclick="send('sound/down')">SOUND DOWN</button>
+
+      <button onclick="send('sound/up')">SOUND UP</button>
+    </div>
+
+    <div class="row two">
+      <button class="source" onclick="send('sound/aux')">SOUND AUX</button>
+
+      <button class="source" onclick="send('sound/bluetooth')">SOUND BLUETOOTH</button>
+    </div>
+  </div>
+</body>
+</html>
